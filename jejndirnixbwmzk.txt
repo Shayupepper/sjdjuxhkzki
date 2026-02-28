@@ -1,0 +1,3 @@
+🇭🇰 HK UDPN = trojan, s1k9t.spark.shijienameda.com, 13671, password=b6a80cbd-d600-44dc-bf17-bc20143e4d2d, skip-cert-verify=true, sni=www.alibabacloud.com
+🇸🇬 SG UDPN = trojan, s1k9t.spark.shijienameda.com, 13682, password=b6a80cbd-d600-44dc-bf17-bc20143e4d2d, skip-cert-verify=true, sni=www.alibabacloud.com
+🇯🇵 JP UDPN = trojan, s1k9t.spark.shijienameda.com, 13677, password=b6a80cbd-d600-44dc-bf17-bc20143e4d2d, skip-cert-verify=true, sni=www.alibabacloud.com
