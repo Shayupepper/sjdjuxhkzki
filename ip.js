@@ -1,32 +1,25 @@
-/**
- * Substore Script: 显示入口城市+运营商
- * 格式示例: 香港 01 [广州电信]
- */
 async function operator(proxies) {
-  const queryTasks = proxies.map(async (proxy) => {
-    try {
-      const server = proxy.server;
-      // 使用 ip-api 查询，语言设为中文
-      const res = await fetch(`http://ip-api.com/json/${server}?lang=zh-CN`);
-      const data = await res.json();
-
-      if (data && data.status === 'success') {
-        // 简写运营商名称
-        let isp = data.isp;
-        if (isp.includes('Telecom')) isp = '电信';
-        else if (isp.includes('Unicom')) isp = '联通';
-        else if (isp.includes('Mobile')) isp = '移动';
-        else if (isp.includes('Education')) isp = '教育网';
-        
-        // 拼接城市和简写的运营商
-        const tag = `${data.city}${isp}`;
-        proxy.name = `${proxy.name} [${tag}]`;
+  // 限制并发数，防止被 API 封禁
+  const limit = 5; 
+  for (let i = 0; i < proxies.length; i += limit) {
+    const chunk = proxies.slice(i, i + limit);
+    await Promise.all(chunk.map(async (proxy) => {
+      try {
+        const res = await fetch(`http://ip-api.com/json/${proxy.server}?lang=zh-CN`, { timeout: 2000 });
+        const data = await res.json();
+        if (data && data.status === 'success') {
+          let isp = data.isp || '';
+          if (isp.includes('Telecom')) isp = '电信';
+          else if (isp.includes('Unicom')) isp = '联通';
+          else if (isp.includes('Mobile')) isp = '移动';
+          else isp = isp.substring(0, 4); // 其他运营商取前4位
+          
+          proxy.name = `${proxy.name} [${data.city}${isp}]`;
+        }
+      } catch (e) {
+        // 忽略错误，保证节点能正常显示
       }
-    } catch (e) {
-      // 失败时不修改名称，保持原始状态
-    }
-    return proxy;
-  });
-
-  return await Promise.all(queryTasks);
+    }));
+  }
+  return proxies;
 }
