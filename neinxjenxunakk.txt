@@ -1,1 +1,0 @@
-vless=shcm.43w9galdodkuqmfherwd5ckhdk6ypwdv.softbank.best:51446, method=none, password=25f2ba85-be19-457a-b050-f2f99873a9ea, obfs=over-tls, tls-verification=true, tls-cert-sha256=DD83AC3B0440DC28950689E673EEFCBD0D3025C3B77B20BFF6859BB9E87818B6, vless-flow=xtls-rprx-vision, tls-host=cn-sh-fx-live-01.bilivideo.com, fast-open=false, udp-relay=true, tag=🇰🇵 朝鲜测试
