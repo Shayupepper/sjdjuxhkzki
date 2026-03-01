@@ -1,4 +1,0 @@
-🇭🇰 香港实验性 IEPL 专线 1 = trojan, oss-cn-guangzhou.solidigm-nvme.com, 20002, password=CEA48485-39D9-1BEA-0240-0E512C98674D, skip-cert-verify=true, sni=mpvideo.qpic.cn
-🇸🇬 新加坡实验性 IEPL 专线 1 = trojan, oss-cn-guangzhou.solidigm-nvme.com, 20026, password=CEA48485-39D9-1BEA-0240-0E512C98674D, skip-cert-verify=true, sni=mpvideo.qpic.cn
-🇯🇵 日本实验性 IEPL 专线 1 = trojan, oss-cn-shanghai.solidigm-nvme.com, 20031, password=CEA48485-39D9-1BEA-0240-0E512C98674D, skip-cert-verify=true, sni=mpvideo.qpic.cn
-🇺🇸 美国实验性 IEPL 专线 1 = trojan, oss-cn-shanghai.solidigm-nvme.com, 20045, password=CEA48485-39D9-1BEA-0240-0E512C98674D, skip-cert-verify=true, sni=mpvideo.qpic.cn
