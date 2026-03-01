@@ -1,0 +1,5 @@
+🇭🇰 香港 01 [UDPN] =trojan,s1k9t.spark.shijienameda.com,13671,password="b6a80cbd-d600-44dc-bf17-bc20143e4d2d",tls=true,sni=www.alibabacloud.com,skip-cert-verify=true,udp-relay=true
+🇨🇳 台湾 01 [UDPN] =trojan,s1k9t.spark.shijienameda.com,13675,password="b6a80cbd-d600-44dc-bf17-bc20143e4d2d",tls=true,sni=www.alibabacloud.com,skip-cert-verify=true,udp-relay=true
+🇯🇵 日本 01 [UDPN] =trojan,s1k9t.spark.shijienameda.com,13677,password="b6a80cbd-d600-44dc-bf17-bc20143e4d2d",tls=true,sni=www.alibabacloud.com,skip-cert-verify=true,udp-relay=true
+🇸🇬 新加坡 01 [UDPN] =trojan,s1k9t.spark.shijienameda.com,13681,password="b6a80cbd-d600-44dc-bf17-bc20143e4d2d",tls=true,sni=www.alibabacloud.com,skip-cert-verify=true,udp-relay=true
+🇺🇸 美国 01 [UDPN] =trojan,s1k9t.spark.shijienameda.com,13687,password="b6a80cbd-d600-44dc-bf17-bc20143e4d2d",tls=true,sni=www.alibabacloud.com,skip-cert-verify=true,udp-relay=true
